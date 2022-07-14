@@ -1,5 +1,5 @@
 {
-  "name": "@gaurav-lambha/react-ui-lib",
+  "name": "@gaurav-lambha/react-antd-lib",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
@@ -7,7 +7,7 @@
   "repository": {
     "url": "https://github.com/Gaurav-Lambha/react-antd-lib"
   },
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "This is a react library for remake",
   "scripts": {
     "prepublish": "rm -rf dist && npm run rollup",
@@ -63,7 +63,10 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   },
-  "peerDependencies": {},
+  "peerDependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
