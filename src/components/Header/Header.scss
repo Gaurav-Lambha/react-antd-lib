@@ -1,0 +1,37 @@
+ .logo {
+    float: left;
+    width: 120px;
+    height: 31px;
+    margin: 16px 24px 16px 0;
+  }
+
+  .app-logo {
+    float: left;
+    margin-right: 24px;
+    margin-top: 7px;
+  }
+
+  .app-header {
+    padding: 0px !important;
+    width: 100% !important;
+    z-index: 100 !important;
+    right: 0px !important;
+  }
+
+  .ant-layout-header {
+    background: #1e88e5 !important;
+  }
+  
+  .site-layout-background {
+    background: #fff;
+  }
+
+  .right {
+    display: flex;
+    float: right;
+    height: 100%;;
+    margin-left: auto;
+    overflow: hidden;
+ }
+  
+  

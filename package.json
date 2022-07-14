@@ -1,0 +1,77 @@
+{
+  "name": "@gaurav-lambha/react-ui-lib",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "repository": {
+    "url": "https://github.com/Gaurav-Lambha/react-antd-lib"
+  },
+  "version": "0.0.11",
+  "description": "This is a react library for remake",
+  "scripts": {
+    "prepublish": "rm -rf dist && npm run rollup",
+    "rollup": "rollup -c",
+    "rollup:watch": "rollup -c -w",
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "author": "serviceo",
+  "license": "ISC",
+  "devDependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@babel/core": "^7.17.12",
+    "@babel/preset-env": "^7.17.12",
+    "@babel/preset-react": "^7.17.12",
+    "@babel/preset-typescript": "^7.17.12",
+    "@material-ui/core": "^4.12.4",
+    "@mdx-js/react": "^1.6.22",
+    "@rollup/plugin-commonjs": "^22.0.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.2",
+    "@storybook/addon-actions": "^6.5.0",
+    "@storybook/addon-essentials": "^6.5.0",
+    "@storybook/addon-interactions": "^6.5.0",
+    "@storybook/addon-links": "^6.5.0",
+    "@storybook/builder-webpack5": "^6.5.0",
+    "@storybook/manager-webpack5": "^6.5.0",
+    "@storybook/preset-scss": "^1.0.3",
+    "@storybook/react": "^6.5.0",
+    "@storybook/testing-library": "^0.0.11",
+    "@testing-library/react": "^13.2.0",
+    "@types/jest": "^27.5.1",
+    "@types/react": "^18.0.9",
+    "antd": "^4.21.6",
+    "babel-jest": "^28.1.0",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.0",
+    "postcss": "^8.4.14",
+    "react-to-webcomponent": "^1.5.1",
+    "rollup": "^2.73.0",
+    "rollup-plugin-dts": "^4.2.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "sass": "^1.51.0",
+    "sass-loader": "^13.0.0",
+    "style-loader": "^3.3.1",
+    "typescript": "^4.6.4",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "peerDependencies": {},
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "component library"
+  ],
+  "types": "dist/index.d.ts"
+}

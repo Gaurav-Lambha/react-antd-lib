@@ -1,0 +1,25 @@
+
+.headerSearch {
+    display: inline-flex;
+    align-items: center;
+  }
+  .headerSearch .input {
+    width: 0;
+    min-width: 0;
+    overflow: hidden;
+    background: transparent;
+    border-radius: 0;
+    transition: width 0.3s, margin-left 0.3s;
+    box-shadow: none !important;
+  }
+  .headerSearch .input {
+    background: transparent;
+  }
+  .headerSearch .input  {
+    box-shadow: none !important;
+  }
+  .headerSearch .input.show {
+    width: 210px;
+    margin-left: 8px;
+  }
+  
