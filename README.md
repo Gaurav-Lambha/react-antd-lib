@@ -113,14 +113,42 @@ Then run
 npm publish
 ```
 
+## Installing this  package
+You can install packages from GitHub Packages by adding the packages as dependencies in the package.json file for your project.
+
+1. Install via package.json:
+
+```
+"@gaurav-lambha/react-antd-lib": "0.0.12"
+```
+
+2. Install from the command line:
+
+```
+npm install @gaurav-lambha/react-antd-lib@0.0.12
+```
+
+3. .npmrc file
+
+In the same directory as your package.json file, create or edit an .npmrc file to include a line specifying GitHub Packages URL and the account owner. Replace ``OWNER`` with the name of the user or organization account that owns the repository containing your project.
+
+```
+Ex: @OWNER:registry=https://npm.pkg.github.com
+```
+
+```
+@gaurav-lambha:registry=https://npm.pkg.github.com
+```
+
+
 ---
 
-Tribute to _Alex Eagleson_
+Tribute to _Gaurav Lambha_
 
 For full instructions how to setup a React Library with Storybook see his great tutorial I've stolen from: https://dev.to/alexeagleson/how-to-create-and-publish-a-react-component-library-2oe?signin=true#adding-storybook
 
 ---
 
-If this was useful you could ...
 
-<a href="https://www.buymeacoffee.com/ppulwey" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
+
