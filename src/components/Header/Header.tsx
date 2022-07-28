@@ -5,48 +5,23 @@ import HeaderAppStore from "./HeaderAppStore/HeaderAppStore"
 import HeaderMenu from "./HeaderMenu/HeaderMenu"
 import HeaderSearch from "./HeaderSearch/HeaderSearch"
 import HeaderAvatar from "./HeaderAvatar/HeaderAvatar"
-//const logo = require('../assets/svg/serviceo-logo-White.svg') as string;
-
-//@ts-ignore
-// import logo from '../assets/svg/serviceo-logo-White.svg';
+import HeaderLogo from "./HeaderLogo/Header-logo";
+import { HeaderProps } from "./header-interface";
 import "antd/dist/antd.css";
 import "./Header.scss";
 
-export interface IUser {
-  name?: string;
-  given_name?: string;
-  family_name?: string;
-  middle_name?: string;
-  nickname?: string;
-  preferred_username?: string;
-  profile?: string;
-  picture?: string;
-  website?: string;
-  email?: string;
-  email_verified?: boolean;
-  gender?: string;
-  birthdate?: string;
-  zoneinfo?: string;
-  locale?: string;
-  phone_number?: string;
-  phone_number_verified?: boolean;
-  address?: string;
-  updated_at?: string;
-  sub?: string;
-  logo?: string;
-  onClick?: () => void;
-}
-const ServiceoHeader: React.FC<IUser> = (props) => {
+const ServiceoHeader: React.FC<HeaderProps> = ({ user, onLogout }: HeaderProps) => {
   return <Header className="header app-header">
-    <img className="app-logo" width={200} height={50} src='../assets/svg/serviceo-logo-White.svg' />
-    <Space className="right">
+    <Space className="logo-left">
+      <HeaderLogo />
+    </Space>
+    <Space className="menu-right">
       <HeaderSearch />
       <HeaderMenu />
-      <HeaderAvatar {...props} onClick= { () => props.onClick}/>
+      <HeaderAvatar user={user} onLogout={onLogout} />
       <HeaderAppStore />
     </Space>
   </Header>
-
 };
 
 export default ServiceoHeader

@@ -13,5 +13,6 @@ export const Default = Template.bind({});
 
 Default.args = {
   type: "primary",
-  children: "I'm a button 😎"
+  children: "I'm a button 😎",
+  size: 'small'
 };

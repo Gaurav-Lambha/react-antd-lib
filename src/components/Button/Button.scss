@@ -11,12 +11,25 @@ button:active {
   box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 5px inset;
 }
 
-.devk__btn--primary {
+.serviceo-btn-primary {
   background-color: blue;
   color           : white;
 }
 
-.devk__btn--secondary {
+.serviceo-btn-secondary {
   background-color: yellow;
   color           : black;
+}
+
+.serviceo-btn-small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+.serviceo-btn-medium {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+.serviceo-btn-large {
+  font-size: 16px;
+  padding: 12px 24px;
 }

@@ -1,40 +1,15 @@
 import React, { useState } from "react";
 import { Avatar, Space, Dropdown, Menu } from "antd";
-// import { useAuth0 } from '@auth0/auth0-react';
 import {
   UserOutlined,
   SettingOutlined,
   PoweroffOutlined,
 } from "@ant-design/icons";
 import "./HeaderAvatar.scss";
+import { HeaderProps } from "./../header-interface";
 
-export interface IUser {
-  name?: string;
-  given_name?: string;
-  family_name?: string;
-  middle_name?: string;
-  nickname?: string;
-  preferred_username?: string;
-  profile?: string;
-  picture?: string;
-  website?: string;
-  email?: string;
-  email_verified?: boolean;
-  gender?: string;
-  birthdate?: string;
-  zoneinfo?: string;
-  locale?: string;
-  phone_number?: string;
-  phone_number_verified?: boolean;
-  address?: string;
-  updated_at?: string;
-  sub?: string;
-  onClick?: () => void;
-}
-
-const HeaderAvatar: React.FC<IUser> = (props) => {
-  // const { user, logout } = useAuth0();
-  const [ userProps, setUserProps] = useState(props);
+const HeaderAvatar: React.FC<HeaderProps> = ({ user, onLogout}: HeaderProps) => {
+  const [ userProps, setUserProps] = useState(user);
 
   const { name, picture, email } = userProps || {name: 'Test User', picture: 'https://joeschmoe.io/api/v1/random', email: 'test@ironsystems.com'};
 
@@ -67,7 +42,7 @@ const HeaderAvatar: React.FC<IUser> = (props) => {
           key: "4",
           danger: true,
           icon: <PoweroffOutlined />,
-          label: <a onClick= { () => props.onClick}>Logout</a>,
+          label: <a onClick= {onLogout}>Logout</a>,
         },
       ]}
     />
